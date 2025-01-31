@@ -43,7 +43,23 @@ $(document).ready(function() {
 
   $(document).on('click','.reset',function() {
     $('.nav-ac').val('').focus();
-    $('.dropdown .item').css('display', 'none');
+    $('.dropdown .item').each(function() {
+      $(this).css('display', 'flex'); // Show all items again
+    });
+
+    let dropdown = $('.dropdown');
+    let firstItem = dropdown.find('.item:first');
+
+    if (firstItem.length) {
+      let offset = firstItem.position().top - dropdown.position().top;
+      dropdown.css('transform', `translateY(-${offset}px)`);
+      
+      // Reset after a short delay for smooth effect
+      setTimeout(() => {
+        dropdown.css('transform', 'translateY(0)');
+      }, 200);
+    }
+    // $('.dropdown .item').css('display', 'none');
   });
 
 });
