@@ -1,0 +1,17 @@
+*config*
+*.sass-cache*
+_video
+Thumbs.db
+node_modules
+audio*
+audio-Iliad
+audio-Odessey
+_db
+php-error.log
+.gitattributes
+sftp-config.json
+package-lock.json
+uploads
+_errors.txt
+composer.lock
+package.json
