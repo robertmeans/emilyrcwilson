@@ -164,6 +164,85 @@ body, html {
     }
   }
 }
+
+.books {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 2em;
+  .book {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    img {
+      width: 100%;
+      max-width: 198px;
+      display: flex;
+      padding-right: 20px; 
+      transition: all 0.2s ease;
+    }
+    a.ba {
+      transition: all 0.15s ease;
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+    .bookInfo {
+      display: flex;
+      flex-direction: column;
+      h2.stext {
+        width: 100%;
+        border-bottom: 1px solid #313131;
+      }
+      a.osl {
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2c4290;
+        padding: 0.5em;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover {
+          color: #fff;
+          opacity: 0.8;
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 1170px) {
+  .books {
+    flex-direction: column;
+    .book {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .books {
+    .book {
+      img {
+        display: none;
+      }
+      p {
+        line-height: 1em;
+        margin-bottom: 0.5em;
+      }
+      .bookInfo {
+        width: 100%;
+        a.osl {
+          width: 100%;
+          padding: 1em;
+        }
+      }
+    }
+  }
+}
+
 .msg {
   width: 90%;
   max-width: 1440px;
@@ -172,17 +251,71 @@ body, html {
   background-color: #fff;
   .ttext {
     font-family: "Playfair Display", serif;
+    text-transform: uppercase;
     font-size: 2em;
     font-optical-sizing: auto;
     font-weight: 600;
     letter-spacing: 2px;
-    font-style: normal;   
+    font-style: normal;
+    margin: 1em 0 0.5em;
+    // margin-bottom: 0.5em;   
+  }
+  .stext {
+    font-family: "Barlow Condensed", serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.8px; 
+  }
+}
+a {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #8f823b;
+    text-decoration-color: white;
+  }
+}
+em {
+  font-style: italic;
+}
+#toggleAbtPg {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2c4290;
+  opacity: 1;
+  transition: all 0.2s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+  i {
+    margin-right: 1em;
+  }
+}
+#abtPg {
+  display: none;
+  background-color: #f1f1f1;
+  padding: 1em;
+  i.fa-smile {
+    color: #d78d3e;
   }
 }
 
 @media screen and (max-width: 620px) {
   .page {
     border: 10px solid #b8a84c;
+  }
+  .msg {
+    width: 100%;
+    padding: 20px 10px 40px;
   }
   .search-field {
     padding-top: 10px;

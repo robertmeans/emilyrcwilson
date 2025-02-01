@@ -62,4 +62,33 @@ $(document).ready(function() {
     // $('.dropdown .item').css('display', 'none');
   });
 
+
+  $("#abtPg").hide();
+  $("#toggleAbtPg").click(function(){
+
+      $(this).toggleClass("active").next().slideToggle(600);
+
+      if ($.trim($(this).html()) === '<i class="fas fa-minus"></i> Close') {
+         $(this).html('<i class="fas fa-plus"></i> About this page');
+      } else {
+
+          $(this).html('<i class="fas fa-minus"></i> Close');
+      }
+    return false;
+  });
+  $("#closeAbtPg").click(function(){
+
+      $("#toggleAbtPg").toggleClass("active").next().slideToggle(600);
+
+      if ($.trim($("#toggleAbtPg").html()) === '<i class="fas fa-minus"></i> Close') {
+         $("#toggleAbtPg").html('<i class="fas fa-plus"></i> About this page');
+      } else {
+
+          $("#toggleAbtPg").html('<i class="fas fa-minus"></i> Close');
+      }
+    return false;
+  });
+
+
+
 });

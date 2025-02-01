@@ -63,10 +63,39 @@ require '_includes/head.php'; ?>
   </div><!-- .wrap -->
 
   <div class="msg">
-    <p class="ttext">EMILY WILSON<p>
-      <p>Done. All pronunciations have been added to this search.<br><br>
-      While each file, individually, is relatively small, cumulatively they add up to a fair amount of data. In order to manage the page load, the mp3 files are only accessed on a per-click basis and are neither preloaded nor cached. This keeps the page small and quick to load. - I moved this off Squarespace because I am able to write this in about 6 lines of code instead of 5,000 which is what it would take there.<br><br>
-    Nice Led Zeppelin nod tucked in with Achilles (under Iliad Names). &nbsp;&nbsp;:-)</p>
+
+    <div id="toggleAbtPg"><i class="fas fa-plus"></i> About this page</div>
+    <div id="abtPg">
+      <p>The above search includes 1,327 pronunciations that Emily Wilson, Translator of <em><a href="https://www.emilyrcwilson.com/the-odyssey" target="_blank">The Odessey</a></em> and <em><a href="https://www.emilyrcwilson.com/the-iliad-sept-2023" target="_blank">The Iliad</a></em>, has painstakingly provided on <a href="https://emilyrcwilson.com" target="_blank">her website</a>.</p>
+      <p>I made this search so that I could find pronunciations quickly, with minimal interruptions, while I read. This was designed with my <a href="https://www.apple.com/by/iphone-13/" target="_blank">iPhone 13</a> mini as the basis for keeping the search results "above the fold" - in other words, to keep the results visible while the keypad is also occupying screen real estate. My apologies if you are on a smaller screen or if <em>anything</em> isn't just exactly perfect. <i class="far fa-smile"></i></p>
+      <p>While each file, individually, is relatively small, cumulatively they add up to a fair amount of data. In order to manage the page load, the mp3 files are only accessed on a per-click basis and are neither preloaded nor cached. This keeps the page small and quick to load, however, the tradeoff is that an active Internet connection is required for consistently smooth playbacks.</p>
+      <p><a id="closeAbtPg">Close</a></p>
+    </div>
+    <h1 class="ttext">Emily Wilson</h1>
+    <h2 class="stext">Translator of The <em>Iliad</em> and the <em>Odyssey</em></h2>
+    <p>The content below will take you to Emily Wilson's website where you can find additional resources about both of her world-renowned translations, learn about the author and find additional resources.</p>
+
+    <div class="books">
+      <div class="book">
+        <a class="ba" href="https://www.amazon.com/Iliad-Homer/dp/1324001801" target="_blank"><img src="_images/iliad-cover.webp"></a>
+        <div class="bookInfo">
+          <h2 class="stext">The Iliad</h2>
+          <p><a class="osl" href="https://www.emilyrcwilson.com/the-iliad-sept-2023" target="_blank">About this book</a></p>
+          <p><a class="osl" href="https://www.emilyrcwilson.com/iliad-pronunciation-1" target="_blank">Iliad Pronunciations</a></p>
+          <p><a class="osl" href="https://www.amazon.com/Iliad-Homer/dp/1324001801" target="_blank">Find on Amazon</a></p>
+        </div>
+      </div>
+      <div class="book">
+        <a class="ba" href="https://www.amazon.com/Odyssey-Homer/dp/0393356256" target="_blank"><img src="_images/odyssey-cover.webp"></a>
+        <div class="bookInfo">
+          <h2 class="stext">The Odyssey</h2>
+          <p><a class="osl" href="https://www.emilyrcwilson.com/the-odyssey" target="_blank">About this book</a></p>
+          <p><a class="osl" href="https://www.emilyrcwilson.com/pronunciation-guide-1" target="_blank">Odyssey Pronunciations</a></p>
+          <p><a class="osl" href="https://www.amazon.com/Odyssey-Homer/dp/0393356256" target="_blank">Find on Amazon</a></p>
+        </div>
+      </div>
+    </div>      
+
   </div>
 </div><!-- .page -->
 
