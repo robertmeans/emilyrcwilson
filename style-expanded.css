@@ -208,6 +208,7 @@ body, html {
 
   .search-field {
     padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 0px;
   }
   .search-field .searchArea {
@@ -219,10 +220,16 @@ body, html {
         flex-direction: column;
     -ms-flex-pack: start;
         justify-content: flex-start;
-    min-height: 340px;
+    min-height: 320px;
   }
   .wrap .container {
     min-height: 4em;
+  }
+  .wrap .container .title {
+    margin-bottom: 0.25em;
+  }
+  .wrap .container .dropdown {
+    margin-top: 0;
   }
 
   .odessey {
