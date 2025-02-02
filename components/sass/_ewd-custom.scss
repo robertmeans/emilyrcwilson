@@ -20,6 +20,63 @@ body, html {
   border: 75px solid #b8a84c;
   transition: all 0.3s ease;
 }
+.search-field {
+  display: flex;
+  width: 100%;
+  max-width: 650px;
+  margin: 20px auto 0px;
+  padding: 20px;
+  align-items: center;
+  background-color: #fff;
+  .searchArea {
+    display: flex;
+    border: 1px solid #727272;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    .mag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      padding: 0px 8px;
+      i.fa-search {
+        // padding: 10px;
+      }
+    }
+    input {
+      display: flex;
+      flex: 2;
+      webkit-display: none;
+      font-size: 1em;
+      border: none;
+      padding: 10px;
+      background-color: #f1f1f1;
+      color: #333;
+      border-left: 1px solid #fff;
+    }
+    input:focus {
+      outline: none;
+    }
+    .reset {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      
+      i.fa-backspace {
+        // padding: 10px;
+        color: #727272;
+        transition: all 0.2s ease;
+      }
+      &:hover i.fa-backspace {
+        color: #ee6f75;
+      }
+    }
+  }
+}
 .wrap {
   display: flex;
   height: 180px;
@@ -107,64 +164,6 @@ body, html {
     }
   }
 }
-.search-field {
-  display: flex;
-  width: 100%;
-  max-width: 650px;
-  margin: 20px auto 0px;
-  padding: 20px;
-  align-items: center;
-  background-color: #fff;
-  .searchArea {
-    display: flex;
-    border: 1px solid #727272;
-    width: 100%;
-    max-width: 300px;
-    background-color: #fff;
-    .mag {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #fff;
-      padding: 0px 8px;
-      i.fa-search {
-        // padding: 10px;
-      }
-    }
-    input {
-      display: flex;
-      flex: 2;
-      webkit-display: none;
-      font-size: 1em;
-      border: none;
-      padding: 10px;
-      background-color: #f1f1f1;
-      color: #333;
-      border-left: 1px solid #fff;
-    }
-    input:focus {
-      outline: none;
-    }
-    .reset {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      
-      i.fa-backspace {
-        // padding: 10px;
-        color: #727272;
-        transition: all 0.2s ease;
-      }
-      &:hover i.fa-backspace {
-        color: #ee6f75;
-      }
-    }
-  }
-}
-
 .books {
   display: flex;
   width: 100%;
